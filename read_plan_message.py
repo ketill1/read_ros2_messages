@@ -29,7 +29,7 @@ with open(r'/home/ketill/Downloads/inside_office/map.yaml') as file:
     print(map_origin[0])
     map_resolution = map_yaml["resolution"]
     width = 50; height = 50
-    img = mpimg.imread('/home/ketill/Downloads/inside_office/map.pgm')
+    img = mpimg.imread('/home/ketill/scrips/rosbag2_2023_05_10-09_23_23_0.db3')
     print(img.shape)
 
     ax[0].imshow(img, extent=[0, img.shape[1]*map_resolution, 0, img.shape[0]*map_resolution], cmap="gist_gray")
